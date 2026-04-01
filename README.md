@@ -5,6 +5,8 @@ Learn how to work with DynamoDB
 
 ## Key Concepts
 
+**The Core Mental Model** - Think of DynamoDB like a distributed filing cabinet. The partition key determines which drawer your data goes in (which physical server/shard). The sort key determines how items are ordered within that drawer. But understanding how these work together is an important design consideration.
+
 ### Partition Keys and Sort Keys
 
 DynamoDB tables require a **primary key** to uniquely identify each item. There are two types:
